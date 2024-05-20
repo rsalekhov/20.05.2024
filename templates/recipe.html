@@ -1,0 +1,17 @@
+����� �뢮�� ������ �� ��࠭ (ECHO) ����祭.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+</head>
+<body>
+    <h1>Рецепт</h1>
+    <ul>
+    {% for ingredient, amount in recipe.items %}
+        <li>{{ ingredient }}, {{ amount }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
